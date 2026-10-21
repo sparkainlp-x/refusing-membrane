@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: Refusing Membrane
+version: 0.1.0
+date-released: 2026-10-21
+authors:
+  - family-names: Brisson
+    given-names: Jean-François
+    orcid: https://orcid.org/0009-0000-9778-5374
+license: AGPL-3.0-only
+repository-code: https://github.com/sparkainlp-x/refusing-membrane
+abstract: >-
+  Selective projection for a complex outer-product holographic
+  memory: a calibrated overlap gate refuses out-of-library probes
+  instead of misclassifying them. Threshold self-calibrates via
+  Youden's J on labeled probes, freezes, and is evaluated on fresh
+  seeds, including under distribution shift. Documents the
+  coverage-risk trade-off honestly.
+keywords:
+  - holographic-memory
+  - selective-classification
+  - out-of-distribution
+  - fail-closed
+  - wave-computing
