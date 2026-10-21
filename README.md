@@ -1,5 +1,7 @@
 # Refusing Membrane
 
+**Live demo:** [Holographic Thoughts](https://sparkainlp-x.github.io/holographic-thoughts/) (interactive browser view; synthetic, classical simulation; measured numbers are in this repo)
+
 **A holographic memory that can say "I don't know."**
 
 Selective projection for the complex outer-product holographic
