@@ -10,7 +10,7 @@ stored pattern matches well enough. The threshold self-calibrates
 on labeled probes (Youden's J), freezes, and is evaluated on fresh
 seeds. Stdlib-only Python. AGPL-3.0.
 
-## Verified (SYNTHETIC — seeded classical simulation, output of `demo.py`)
+## Measured in this repo (SYNTHETIC — seeded classical simulation, output of `demo.py`)
 
 - Calibrated τ = 0.700 (J = 0.735)
 - Test: accept-in-library 0.935, reject-OOD 0.870,
@@ -20,6 +20,8 @@ seeds. Stdlib-only Python. AGPL-3.0.
 - Zero-evidence probes (orthogonal to the library) refused
   unconditionally — plain projection crashed on these
 - 7/7 tests pass
+
+**Uncertainty (arithmetic on the counts above, no new runs).** Everything here is one seeded calibration set and one seeded test set (200 in-library and 200 out-of-library probes), so there is no spread across seeds. Treating the probes as independent, Wilson 95% intervals are: accept-in-library 187/200 = 0.935 (0.892–0.962); reject-OOD 174/200 = 0.870 (0.816–0.910); accuracy on accepted 186/187 = 0.995 (0.970–0.999); shift catch rate 31/41 = 0.756 (0.607–0.862); shift cost 60/159 = 0.377 (0.306–0.455). The catch rate at the main operating point rests on a single would-be error (n=1) and is not informative. These intervals cover test-set sampling only, not variation in the calibration set or the seeds; that would need new runs and is not done here.
 
 All numbers are SYNTHETIC (fixed seeds, 4-dimensional toy vectors).
 The test vectors are the Bell-state amplitude vectors used purely
